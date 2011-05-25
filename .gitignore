@@ -1,0 +1,13 @@
+bin
+obj
+*.suo
+*.ReSharper
+*_ReSharper.*/**
+build
+*.user
+*.cache
+*.suo
+Logs
+TestResult.xml
+# This line keeps the db in check - comment it out to update the starting db
+data

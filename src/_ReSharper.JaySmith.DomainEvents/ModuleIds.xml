@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="AC2C0CFE-01B2-49A8-A4FC-287D5E96A10D" ModuleId="JaySmith.DomainEvents" />
+  <Module PersistentId="0EB25BDD-F352-47E8-BBCA-19837EC4AC1F" ModuleId="DomainEventsExample.MVC3" />
+</Modules>
