@@ -30,6 +30,8 @@ namespace JaySmith.DomainEvents
         // Raises the given domain event  
         public static void Raise<T>(T args) where T : IDomainEvent
         {
+            DependencyResolver.Current.GetServices<Handles<T>>();
+
             foreach (var handler in Container.GetServices<Handles<T>>())
                 handler.Handle(args);
 

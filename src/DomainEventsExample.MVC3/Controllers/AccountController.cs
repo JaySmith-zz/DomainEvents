@@ -9,6 +9,9 @@ using DomainEventsExample.MVC3.Models;
 
 namespace DomainEventsExample.MVC3.Controllers
 {
+    using DomainEventsExample.MVC3.Domain;
+    using DomainEventsExample.MVC3.Services.DomainEvents;
+
     public class AccountController : Controller
     {
 
@@ -31,20 +34,20 @@ namespace DomainEventsExample.MVC3.Controllers
                 if (Membership.ValidateUser(model.UserName, model.Password))
                 {
                     FormsAuthentication.SetAuthCookie(model.UserName, model.RememberMe);
+
+                    DomainEvents.Raise(new LogOnSuccessEvent(model));
+
                     if (Url.IsLocalUrl(returnUrl) && returnUrl.Length > 1 && returnUrl.StartsWith("/")
                         && !returnUrl.StartsWith("//") && !returnUrl.StartsWith("/\\"))
                     {
                         return Redirect(returnUrl);
                     }
-                    else
-                    {
-                        return RedirectToAction("Index", "Home");
-                    }
+                    
+                    return this.RedirectToAction("Index", "Home");
                 }
-                else
-                {
-                    ModelState.AddModelError("", "The user name or password provided is incorrect.");
-                }
+
+                DomainEvents.Raise(new LogOnFailEvent(model));
+                this.ModelState.AddModelError("", "The user name or password provided is incorrect.");
             }
 
             // If we got this far, something failed, redisplay form

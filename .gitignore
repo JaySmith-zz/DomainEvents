@@ -1,13 +1,13 @@
-bin
-obj
+build/
+release/
 *.suo
-*.ReSharper
-*_ReSharper.*/**
-build
 *.user
-*.cache
+bin
+Bin
+obj
+_ReSharper*
+*.csproj.user
+*.resharper.user
 *.suo
-Logs
+*.cache
 TestResult.xml
-# This line keeps the db in check - comment it out to update the starting db
-data
