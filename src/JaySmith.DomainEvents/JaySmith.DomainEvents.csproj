@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DomainEvents.cs" />
-    <Compile Include="Handles.cs" />
+    <Compile Include="DomainEventManager.cs" />
+    <Compile Include="IDomainEventHandler.cs" />
     <Compile Include="IDomainEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
