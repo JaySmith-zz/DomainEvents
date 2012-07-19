@@ -1,16 +1,13 @@
-﻿using System;
+﻿using Microsoft.Practices.ServiceLocation;
+using System;
 using System.Collections.Generic;
 
 namespace JaySmith.DomainEvents
 {
-    using System.Web.Mvc;
-
     public class DomainEventManager
     {
         [ThreadStatic] //so that each thread has its own callbacks   
         private static List<Delegate> actions;
-
-        public static IDependencyResolver Container { get; set; }
 
         //Registers a callback for the given domain event   
         public static void Register<T>(Action<T> callback) where T : IDomainEvent
@@ -30,9 +27,9 @@ namespace JaySmith.DomainEvents
         // Raises the given domain event  
         public static void Raise<T>(T args) where T : IDomainEvent
         {
-            DependencyResolver.Current.GetServices<IDomainEventHandler<T>>();
+            var handlers = ServiceLocator.Current.GetAllInstances<IDomainEventHandler<T>>();
 
-            foreach (var handler in Container.GetServices<IDomainEventHandler<T>>())
+            foreach (var handler in handlers)
                 handler.Handle(args);
 
             if (actions != null)
