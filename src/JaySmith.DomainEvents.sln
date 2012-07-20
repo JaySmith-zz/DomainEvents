@@ -5,9 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaySmith.DomainEvents", "Ja
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaySmith.DomainEvents.StructureMap", "JaySmith.DomainEvents.StructureMap\JaySmith.DomainEvents.StructureMap.csproj", "{7CD33E78-C0F5-496A-9D1C-BD46E54C2050}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet Package", "NuGet Package\NuGet Package.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainEvents.Example", "DomainEvents.Example\DomainEvents.Example.csproj", "{D84B108B-6F0D-43F6-A6BA-7913EF9CA560}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainEvents.StructureMapExample", "DomainEvents.StructureMap.Example\DomainEvents.StructureMapExample.csproj", "{D84B108B-6F0D-43F6-A6BA-7913EF9CA560}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,9 +21,6 @@ Global
 		{7CD33E78-C0F5-496A-9D1C-BD46E54C2050}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CD33E78-C0F5-496A-9D1C-BD46E54C2050}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CD33E78-C0F5-496A-9D1C-BD46E54C2050}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D84B108B-6F0D-43F6-A6BA-7913EF9CA560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D84B108B-6F0D-43F6-A6BA-7913EF9CA560}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D84B108B-6F0D-43F6-A6BA-7913EF9CA560}.Release|Any CPU.ActiveCfg = Release|Any CPU
