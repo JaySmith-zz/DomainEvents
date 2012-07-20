@@ -13,7 +13,7 @@ namespace DomainEvents.Example.Domain
         public Person(string firstName, string lastName)
         {
             this.FirstName = firstName;
-            this.LastName = lastName;
+            this._lastName = lastName;
         }
 
         public string FirstName { get; set; }

@@ -1,4 +1,5 @@
-﻿using StructureMap;
+﻿using JaySmith.DomainEvents;
+using StructureMap;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,8 @@ namespace DomainEvents.Example
                 scan.AssembliesFromApplicationBaseDirectory();
                 scan.LookForRegistries();
                 
+                // Would like to remove and do in StructureMapRegistry
+                scan.ConnectImplementationsToTypesClosing(typeof(IDomainEventHandler<>));
             }));
         }
     }

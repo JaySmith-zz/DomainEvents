@@ -1,5 +1,7 @@
-﻿using StructureMap;
+﻿using Microsoft.Practices.ServiceLocation;
+using StructureMap;
 using StructureMap.Configuration.DSL;
+using StructureMap.ServiceLocatorAdapter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,14 +11,21 @@ namespace JaySmith.DomainEvents.StructureMap
 {
     public class StructureMapRegistry : Registry
     {
-        public StructureMapRegistry ()
-	    {
-            ObjectFactory.Initialize(x => x.Scan(scan =>
-                {
-                    // Needed for Domain Event Manager to work correctly
-                    scan.ConnectImplementationsToTypesClosing(typeof(IDomainEventHandler<>));
-                }
-            ));
-	    }
+        public StructureMapRegistry() 
+        {
+            //Scan(scan => {
+            //    scan.AssemblyContainingType<IDomainEvent>();
+            //    scan.ConnectImplementationsToTypesClosing(typeof(IDomainEventHandler<>));
+            //});
+
+            try
+            {
+                var locator = ServiceLocator.Current;
+            }
+            catch (Exception)
+            {
+                ServiceLocator.SetLocatorProvider(() => new StructureMapServiceLocator(ObjectFactory.Container));
+            }
+        }
     }
 }

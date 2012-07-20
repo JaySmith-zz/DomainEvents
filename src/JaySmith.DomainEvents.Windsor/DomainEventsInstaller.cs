@@ -11,11 +11,11 @@ namespace JaySmith.DomainEvents.Windsor
     {
         public void Install(Castle.Windsor.IWindsorContainer container, Castle.MicroKernel.SubSystems.Configuration.IConfigurationStore store)
         {
-            container.Register(
-                AllTypes.FromThisAssembly()
-                    .BasedOn<IDomainEventHandler<T>()
-                    .WithService.Base();
-                );
+            //container.Register(
+            //    AllTypes.FromThisAssembly()
+            //        .BasedOn<IDomainEventHandler<T>>()
+            //        .WithService.Base();
+            //    );
         }
     }
 }

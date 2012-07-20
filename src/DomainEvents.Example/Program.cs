@@ -1,4 +1,6 @@
-﻿using StructureMap;
+﻿using DomainEvents.Example.DomainEvents;
+using JaySmith.DomainEvents;
+using StructureMap;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +14,8 @@ namespace DomainEvents.Example
         static void Main(string[] args)
         {
             Bootstrapper.Initialize();
+
+            var handlers = ObjectFactory.GetAllInstances(typeof(IDomainEventHandler<PersonLastNameChangedEvent>));
 
             var application = ObjectFactory.GetInstance<DemoApplication>();
             application.Run();

@@ -1,10 +1,6 @@
-﻿using DomainEvents.Example.DomainEvents;
+﻿using System;
+using DomainEvents.Example.DomainEvents;
 using JaySmith.DomainEvents;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DomainEvents.Example.DomainEventHandlers
 {
