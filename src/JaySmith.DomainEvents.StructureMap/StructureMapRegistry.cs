@@ -13,11 +13,6 @@ namespace JaySmith.DomainEvents.StructureMap
     {
         public StructureMapRegistry() 
         {
-            //Scan(scan => {
-            //    scan.AssemblyContainingType<IDomainEvent>();
-            //    scan.ConnectImplementationsToTypesClosing(typeof(IDomainEventHandler<>));
-            //});
-
             try
             {
                 var locator = ServiceLocator.Current;

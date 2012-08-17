@@ -19,7 +19,8 @@ namespace DomainEvents.Example.Domain
         public string FirstName { get; set; }
 
         private string _lastName;
-        public string LastName { 
+        public string LastName 
+        { 
             get
             {
                 return _lastName;

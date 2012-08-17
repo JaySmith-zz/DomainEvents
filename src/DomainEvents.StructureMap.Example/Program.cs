@@ -15,7 +15,7 @@ namespace DomainEvents.Example
         {
             Bootstrapper.Initialize();
 
-            var handlers = ObjectFactory.GetAllInstances(typeof(IDomainEventHandler<PersonLastNameChangedEvent>));
+            //var handlers = ObjectFactory.GetAllInstances(typeof(IDomainEventHandler<PersonLastNameChangedEvent>));
 
             var application = ObjectFactory.GetInstance<DemoApplication>();
             application.Run();

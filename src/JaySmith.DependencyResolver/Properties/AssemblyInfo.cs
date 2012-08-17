@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("JaySmith.DomainEvents.StructureMap")]
-[assembly: AssemblyDescription("Domain Events support for StructureMap")]
+[assembly: AssemblyTitle("JaySmith.DependencyResolver")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Jay Smith")]
-[assembly: AssemblyProduct("JaySmith.DomainEvents.StructureMap")]
-[assembly: AssemblyCopyright("Copyright © Jay Smith 2012")]
+[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyProduct("JaySmith.DependencyResolver")]
+[assembly: AssemblyCopyright("Copyright © Microsoft 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ad0fdcc2-c3b0-470a-8bc7-9c36bcca3e41")]
+[assembly: Guid("87c8bb16-9071-4bb1-b201-dc941110db9e")]
 
 // Version information for an assembly consists of the following four values:
 //
