@@ -12,7 +12,7 @@ Create BootStrapper class
 	public static class BootStrapper
 	public static void Initalize()
 	{
-		ObjectFactory.Intialize(x => x.Scan(scan =>
+		ObjectFactory.Initialize(x => x.Scan(scan =>
 		{
 			scan.TheCallingAssembly();
 			scan.WithDefaultConventions();
