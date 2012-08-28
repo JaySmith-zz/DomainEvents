@@ -36,8 +36,57 @@
 <p>The Domain Events Project was inspired by work done by Udi Dahan.&nbsp; The goal of the project is to make adding Domain Event support to your appllication easy.&nbsp; </p>
 
 <h3>Getting Started</h3>
-          <p>This section will cover a quick start for adding Domain Events to an application.</p>
+          <p>This section will cover a quick start for adding Domain Events to an application. </p>
+          <h3>The Domain Object</h3>
+          <pre>public class Person
+{
+	public string FirstName { get; set; }
+	public string LastName { get; set; }
+}</pre>
+          <h3>Defining a Domain Event</h3>
+          <pre>public class PersonLastNameChangedEvent : IDomainEvent
+{
+	public Person Person { get; set; }
+	public string OldLastName { get;  set; }
+	public string NewLastName { get; set; }
 
+	public PersonLastNameChangedEvent( Person person, string oldLastName, string newLastName)
+	{
+		this.Person = person;
+		this.OldLastName = oldLastName;
+		this.NewLastName = newLastName;
+	}
+}</pre>
+          <h3>Defining a Domain Event Handler</h3>
+          <pre>public class PersonLastNameChangedEventHandler : IDomianEventHandler&lt;PersonLastNameChangedEvent&gt;
+{
+	public void Handle(PersonLastNameChangedEvent args)
+	{
+		var person = args.Person;
+		var oldLastName = args.OldLastName;
+		var newLastName = args.NewLastName;
+
+		// Do Something with the data
+		...
+	}
+}</pre>
+          <h3>Raising the Domain Event</h3>
+          <pre>public class Person
+{
+	...
+	public void ChangeLastName(string newLastName)
+	{
+		//Capture the current last name
+		var oldLastName = this.LastName;
+		
+		// Change the last Name
+		this.LastName = newLastName;
+
+		// Create and Raise the Domain Event
+		var lastNameChangedEvent = new PersonLastNameChangedEvent(this, oldLastName, value);
+		DomainEventManager.Raise(lastNameChangedEvent);
+	}
+}</pre>
       </section>
     </div>
 
