@@ -44,7 +44,7 @@ namespace :package do
 		create_packs	
 		Dir.chdir('pack')
 		Dir.glob('*').each do |file| 
-			sh '../Highway/.nuget/nuget.exe push ' + file
+			sh '../src/.nuget/nuget.exe push ' + file
 			FileUtils.move(file,'../nuget/')
 		end
 		Dir.chdir('..')
