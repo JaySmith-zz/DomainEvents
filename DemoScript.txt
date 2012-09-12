@@ -51,28 +51,20 @@ Add Domain Object: Person
 	
 	Properties 
 		FirstName 	AUTO
-		
-		private string _lastName;
-        public string LastName 
-		{ 
-			get
-			{
-				return _lastName;
-			}
-			set
-			{
-				_lastName = value;
-			}
-		}
-		
+		LastName	AUTO
+		        	
 		Full Name Getter Only - return string.Format("{0} {1}", FirstName, LastName);
+		
+		Stub out UpdateLastName(string newLastName)
+		public void UpdateLastName(string newLastName)
+        {
+            LastName = newLastName;
+        }
 		
 Modify DemoApplication Run
 	{
 		var person = new Person("Kristina", "Parker");
-		
-		// Change Last Name
-		person.LastName = "Smith";
+		person.UpdateLastName = "Smith";
 	}
 	
 Talk about LastName Changed as an interesting event
@@ -92,9 +84,23 @@ Add PersonLastNameChangedEvent
 			this.NewValue = newValue;
 		}
 	}
-	
+
+Modify the Person class to raise the event when the last name is changed
+	public void UpdateLastName(string newLastName)
+        {
+            var oldLastName = LastName;
+            LastName = newLastName;
+
+            var lastNameChangedEvent = new PersonLastNameChangedEvent(this, oldLastName, newLastName);
+            DomainEventManager.Raise(lastNameChangedEvent);
+        }
+
+The event gets raised but nothing is listening to for the event. So, lets do
+something when this event happens, to do that we need an event handler.
+		
 Add DomainEventHandlers Folder
 Add PersonLastNameCHangedEventHandler
+	
 	public class PersonLastNameChangedEventHandler : IDomainEventHandler<PersonLastNameChangedEvent>
 	{
 		public void Handle(PersonLastNameChangedEvent args)
@@ -102,18 +108,6 @@ Add PersonLastNameCHangedEventHandler
 			Console.WriteLine("Lastname changed from {0} to {1}", args.OldValue, args.NewValue);
 		}
 	}
-	
-Modify the Person class
-	Change LastName Setter
-		set
-		{
-			var oldValue = _lastName;
-			_lastName = value;
-
-			//Raise LastNameChangedEvent
-			var lastNameChangedEvent = new PersonLastNameChangedEvent(this, oldValue, value);
-			DomainEventManager.Raise(lastNameChangedEvent);
-		}
 
 Modify BootStrapper
 	scan.ConnectImplementationsToTypesClosing(typeof(IDomainEventHandler<>));
