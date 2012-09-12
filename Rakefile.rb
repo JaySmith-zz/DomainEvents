@@ -23,6 +23,7 @@ namespace :build do
     msb.targets args[:targets]
     msb.solution = "#{SOLUTION_DIR}/#{SOLUTION_FILE}"
   end
+  
 end
 
 namespace :package do
