@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>http://jaysmith.github.com/DomainEvents/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial Release of DomainEvents for Castle Windsor users</releaseNotes>
+    <copyright>Copyright © Jay Smith 2012</copyright>
+    <dependencies>
+      <dependency id="CommonServiceLocator.WindsorAdapter" version="1.0" />
+      <dependency id="JaySmith.DomainEvents" version="2.0.0.1" />
+    </dependencies>
+  </metadata>
+</package>

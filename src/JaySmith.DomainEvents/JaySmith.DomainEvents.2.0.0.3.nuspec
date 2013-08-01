@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>JaySmith.DomainEvents</id>
+    <version>2.0.0.3</version>
+    <title>JaySmith.DomainEvents</title>
+    <authors>Jay Smith</authors>
+    <owners>Jay Smith</owners>
+    <projectUrl>http://jaysmith.github.com/DomainEvents/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Simple Domain Event framework for applications based on work by Udi Dahan</description>
+    <copyright>Copyright © Jay Smith 2012</copyright>
+    <dependencies>
+      <dependency id="CommonServiceLocator" version="1.0" />
+    </dependencies>
+  </metadata>
+</package>
