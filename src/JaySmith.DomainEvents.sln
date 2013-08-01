@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{99F743
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaySmith.DomainEvents.Castle", "JaySmith.DomainEvents.Castle\JaySmith.DomainEvents.Castle.csproj", "{87032678-143C-4937-B41C-281D46994D75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainEvents.CastleWindsorExample", "DomainEvents.CastleWindsorExample\DomainEvents.CastleWindsorExample.csproj", "{7DBE0ED3-A5E7-4389-A94D-14C1A0443012}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +34,14 @@ Global
 		{D84B108B-6F0D-43F6-A6BA-7913EF9CA560}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D84B108B-6F0D-43F6-A6BA-7913EF9CA560}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D84B108B-6F0D-43F6-A6BA-7913EF9CA560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87032678-143C-4937-B41C-281D46994D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87032678-143C-4937-B41C-281D46994D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87032678-143C-4937-B41C-281D46994D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87032678-143C-4937-B41C-281D46994D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DBE0ED3-A5E7-4389-A94D-14C1A0443012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBE0ED3-A5E7-4389-A94D-14C1A0443012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DBE0ED3-A5E7-4389-A94D-14C1A0443012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DBE0ED3-A5E7-4389-A94D-14C1A0443012}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
