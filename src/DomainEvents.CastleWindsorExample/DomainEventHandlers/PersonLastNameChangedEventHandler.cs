@@ -8,7 +8,7 @@ namespace DomainEvents.CastleWindsorExample.DomainEventHandlers
     {
         public void Handle(PersonLastNameChangedEvent args)
         {
- 	        Console.WriteLine("Lastname changed from {0} to {1}", args.OldValue, args.NewValue);
+ 	        Console.WriteLine("Last name changed from {0} to {1}", args.OldValue, args.NewValue);
         }
     }
 }

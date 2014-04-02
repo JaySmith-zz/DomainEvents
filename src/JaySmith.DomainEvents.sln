@@ -16,6 +16,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaySmith.DomainEvents.Castl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainEvents.CastleWindsorExample", "DomainEvents.CastleWindsorExample\DomainEvents.CastleWindsorExample.csproj", "{7DBE0ED3-A5E7-4389-A94D-14C1A0443012}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaySmith.DomainEvents.45", "JaySmith.DomainEvents.4\JaySmith.DomainEvents.45.csproj", "{0B6F0A99-DA8E-4844-ACCD-7C4741662244}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaySmith.DomainEvents.Castle45", "JaySmith.DomainEvents.CastleWindsor45\JaySmith.DomainEvents.Castle45.csproj", "{6A5E4B24-5E18-4BD6-B616-3FEC4914A7C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +46,14 @@ Global
 		{7DBE0ED3-A5E7-4389-A94D-14C1A0443012}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DBE0ED3-A5E7-4389-A94D-14C1A0443012}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DBE0ED3-A5E7-4389-A94D-14C1A0443012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B6F0A99-DA8E-4844-ACCD-7C4741662244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B6F0A99-DA8E-4844-ACCD-7C4741662244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B6F0A99-DA8E-4844-ACCD-7C4741662244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B6F0A99-DA8E-4844-ACCD-7C4741662244}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A5E4B24-5E18-4BD6-B616-3FEC4914A7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A5E4B24-5E18-4BD6-B616-3FEC4914A7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A5E4B24-5E18-4BD6-B616-3FEC4914A7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A5E4B24-5E18-4BD6-B616-3FEC4914A7C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
