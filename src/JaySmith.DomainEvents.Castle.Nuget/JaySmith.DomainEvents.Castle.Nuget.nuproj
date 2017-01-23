@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>340c78ab-2ffe-44a1-ae1e-1b5001a604b0</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>JaySmith.DomainEvents.Castle</Id>
+    <Version>1.0.0.1</Version>
+    <Title>JaySmith.DomainEvents.Castle</Title>
+    <Authors>Jay Smith</Authors>
+    <Owners>Jay Smith</Owners>
+    <Summary>
+    </Summary>
+    <Description>Domain Events support for Castle Windsor</Description>
+    <ReleaseNotes>
+    </ReleaseNotes>
+    <ProjectUrl>http://jaysmith.github.com/DomainEvents/</ProjectUrl>
+    <LicenseUrl>
+    </LicenseUrl>
+    <Copyright>Copyright © Jay Smith</Copyright>
+    <Tags>
+    </Tags>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JaySmith.DomainEvents.Castle\JaySmith.DomainEvents.Castle.csproj" />
+  </ItemGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>

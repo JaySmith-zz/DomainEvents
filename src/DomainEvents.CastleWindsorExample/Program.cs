@@ -10,7 +10,7 @@ namespace DomainEvents.CastleWindsorExample
         {
             Bootstrapper.Initialize();
 
-            var events = Bootstrapper.Container.ResolveAll<IDomainEventHandler<PersonLastNameChangedEvent>>();
+            //var events = Bootstrapper.Container.ResolveAll<IDomainEventHandler<PersonLastNameChangedEvent>>();
 
             //var handlers = ObjectFactory.GetAllInstances(typeof(IDomainEventHandler<PersonLastNameChangedEvent>));
 

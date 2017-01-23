@@ -53,6 +53,7 @@
     <Compile Include="DomainEventHandlers\PersonLastNameChangedEventHandler.cs" />
     <Compile Include="DomainEvents\PersonLastNameChangedEvent.cs" />
     <Compile Include="Domain\Person.cs" />
+    <Compile Include="IDemoApplication.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WindsorInstaller.cs" />

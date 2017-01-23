@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaySmith.DomainEvents", "JaySmith.DomainEvents\JaySmith.DomainEvents.csproj", "{AC2C0CFE-01B2-49A8-A4FC-287D5E96A10D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaySmith.DomainEvents.StructureMap", "JaySmith.DomainEvents.StructureMap\JaySmith.DomainEvents.StructureMap.csproj", "{7CD33E78-C0F5-496A-9D1C-BD46E54C2050}"
@@ -19,6 +21,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaySmith.DomainEvents.45", "JaySmith.DomainEvents.4\JaySmith.DomainEvents.45.csproj", "{0B6F0A99-DA8E-4844-ACCD-7C4741662244}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaySmith.DomainEvents.Castle45", "JaySmith.DomainEvents.CastleWindsor45\JaySmith.DomainEvents.Castle45.csproj", "{6A5E4B24-5E18-4BD6-B616-3FEC4914A7C4}"
+EndProject
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "JaySmith.DomainEvents.Nuget", "JaySmith.DomainEvents.Nuget\JaySmith.DomainEvents.Nuget.nuproj", "{010C57F6-C82F-4373-AD74-CB1724CA8EE1}"
+EndProject
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "JaySmith.DomainEvents.Castle.Nuget", "JaySmith.DomainEvents.Castle.Nuget\JaySmith.DomainEvents.Castle.Nuget.nuproj", "{340C78AB-2FFE-44A1-AE1E-1B5001A604B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +60,14 @@ Global
 		{6A5E4B24-5E18-4BD6-B616-3FEC4914A7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A5E4B24-5E18-4BD6-B616-3FEC4914A7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A5E4B24-5E18-4BD6-B616-3FEC4914A7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{010C57F6-C82F-4373-AD74-CB1724CA8EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{010C57F6-C82F-4373-AD74-CB1724CA8EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{010C57F6-C82F-4373-AD74-CB1724CA8EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{010C57F6-C82F-4373-AD74-CB1724CA8EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{340C78AB-2FFE-44A1-AE1E-1B5001A604B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340C78AB-2FFE-44A1-AE1E-1B5001A604B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340C78AB-2FFE-44A1-AE1E-1B5001A604B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340C78AB-2FFE-44A1-AE1E-1B5001A604B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
