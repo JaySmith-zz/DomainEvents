@@ -58,12 +58,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JaySmith.DomainEvents.4\JaySmith.DomainEvents.45.csproj">
-      <Project>{0b6f0a99-da8e-4844-accd-7c4741662244}</Project>
-      <Name>JaySmith.DomainEvents.45</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>

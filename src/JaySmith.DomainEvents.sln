@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaySmith.DomainEvents", "JaySmith.DomainEvents\JaySmith.DomainEvents.csproj", "{AC2C0CFE-01B2-49A8-A4FC-287D5E96A10D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaySmith.DomainEvents.StructureMap", "JaySmith.DomainEvents.StructureMap\JaySmith.DomainEvents.StructureMap.csproj", "{7CD33E78-C0F5-496A-9D1C-BD46E54C2050}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainEvents.StructureMapExample", "DomainEvents.StructureMap.Example\DomainEvents.StructureMapExample.csproj", "{D84B108B-6F0D-43F6-A6BA-7913EF9CA560}"
 EndProject
@@ -14,17 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{99F743
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaySmith.DomainEvents.Castle", "JaySmith.DomainEvents.Castle\JaySmith.DomainEvents.Castle.csproj", "{87032678-143C-4937-B41C-281D46994D75}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainEvents.CastleWindsorExample", "DomainEvents.CastleWindsorExample\DomainEvents.CastleWindsorExample.csproj", "{7DBE0ED3-A5E7-4389-A94D-14C1A0443012}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaySmith.DomainEvents.45", "JaySmith.DomainEvents.4\JaySmith.DomainEvents.45.csproj", "{0B6F0A99-DA8E-4844-ACCD-7C4741662244}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaySmith.DomainEvents.Castle45", "JaySmith.DomainEvents.CastleWindsor45\JaySmith.DomainEvents.Castle45.csproj", "{6A5E4B24-5E18-4BD6-B616-3FEC4914A7C4}"
-EndProject
 Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "JaySmith.DomainEvents.Nuget", "JaySmith.DomainEvents.Nuget\JaySmith.DomainEvents.Nuget.nuproj", "{010C57F6-C82F-4373-AD74-CB1724CA8EE1}"
-EndProject
-Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "JaySmith.DomainEvents.Castle.Nuget", "JaySmith.DomainEvents.Castle.Nuget\JaySmith.DomainEvents.Castle.Nuget.nuproj", "{340C78AB-2FFE-44A1-AE1E-1B5001A604B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,40 +24,19 @@ Global
 		{AC2C0CFE-01B2-49A8-A4FC-287D5E96A10D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC2C0CFE-01B2-49A8-A4FC-287D5E96A10D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC2C0CFE-01B2-49A8-A4FC-287D5E96A10D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7CD33E78-C0F5-496A-9D1C-BD46E54C2050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7CD33E78-C0F5-496A-9D1C-BD46E54C2050}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7CD33E78-C0F5-496A-9D1C-BD46E54C2050}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7CD33E78-C0F5-496A-9D1C-BD46E54C2050}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D84B108B-6F0D-43F6-A6BA-7913EF9CA560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D84B108B-6F0D-43F6-A6BA-7913EF9CA560}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D84B108B-6F0D-43F6-A6BA-7913EF9CA560}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D84B108B-6F0D-43F6-A6BA-7913EF9CA560}.Release|Any CPU.Build.0 = Release|Any CPU
-		{87032678-143C-4937-B41C-281D46994D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87032678-143C-4937-B41C-281D46994D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87032678-143C-4937-B41C-281D46994D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87032678-143C-4937-B41C-281D46994D75}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7DBE0ED3-A5E7-4389-A94D-14C1A0443012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7DBE0ED3-A5E7-4389-A94D-14C1A0443012}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7DBE0ED3-A5E7-4389-A94D-14C1A0443012}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7DBE0ED3-A5E7-4389-A94D-14C1A0443012}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B6F0A99-DA8E-4844-ACCD-7C4741662244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B6F0A99-DA8E-4844-ACCD-7C4741662244}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B6F0A99-DA8E-4844-ACCD-7C4741662244}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B6F0A99-DA8E-4844-ACCD-7C4741662244}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6A5E4B24-5E18-4BD6-B616-3FEC4914A7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6A5E4B24-5E18-4BD6-B616-3FEC4914A7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6A5E4B24-5E18-4BD6-B616-3FEC4914A7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6A5E4B24-5E18-4BD6-B616-3FEC4914A7C4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{010C57F6-C82F-4373-AD74-CB1724CA8EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{010C57F6-C82F-4373-AD74-CB1724CA8EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{010C57F6-C82F-4373-AD74-CB1724CA8EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{010C57F6-C82F-4373-AD74-CB1724CA8EE1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{340C78AB-2FFE-44A1-AE1E-1B5001A604B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{340C78AB-2FFE-44A1-AE1E-1B5001A604B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{340C78AB-2FFE-44A1-AE1E-1B5001A604B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{340C78AB-2FFE-44A1-AE1E-1B5001A604B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1710DF89-B094-45BE-A9DB-19BA9303CD17}
 	EndGlobalSection
 EndGlobal

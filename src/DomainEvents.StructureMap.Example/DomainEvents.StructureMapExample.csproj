@@ -61,10 +61,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\JaySmith.DomainEvents.StructureMap\JaySmith.DomainEvents.StructureMap.csproj">
-      <Project>{7cd33e78-c0f5-496a-9d1c-bd46e54c2050}</Project>
-      <Name>JaySmith.DomainEvents.StructureMap</Name>
-    </ProjectReference>
     <ProjectReference Include="..\JaySmith.DomainEvents\JaySmith.DomainEvents.csproj">
       <Project>{ac2c0cfe-01b2-49a8-a4fc-287d5e96a10d}</Project>
       <Name>JaySmith.DomainEvents</Name>

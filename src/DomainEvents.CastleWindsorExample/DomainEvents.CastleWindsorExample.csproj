@@ -59,10 +59,6 @@
     <Compile Include="WindsorInstaller.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JaySmith.DomainEvents.Castle\JaySmith.DomainEvents.Castle.csproj">
-      <Project>{87032678-143c-4937-b41c-281d46994d75}</Project>
-      <Name>JaySmith.DomainEvents.Castle</Name>
-    </ProjectReference>
     <ProjectReference Include="..\JaySmith.DomainEvents\JaySmith.DomainEvents.csproj">
       <Project>{ac2c0cfe-01b2-49a8-a4fc-287d5e96a10d}</Project>
       <Name>JaySmith.DomainEvents</Name>
